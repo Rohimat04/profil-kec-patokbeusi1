@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Header</title>
+</head>
+
+<body background="bg.png">
+
+<center>
+
+<br>
+
+<font color="blue" size="7">
+<b>KECAMATAN PATOKBEUSI</b>
+</font>
+
+<br><br>
+
+<font color="blue" size="5">
+Kabupaten Subang - Jawa Barat
+</font>
+
+<br><br>
+
+<marquee behavior="alternate">
+<font color="yellow" size="6">
+Selamat Datang di Website Kecamatan Patokbeusi
+</font>
+
+</marquee>
+
+<br>
+
+<div id="jam"></div>
+
+<script>
+
+function tampilJam() {
+
+    var waktu = new Date();
+
+    var jam = waktu.getHours();
+    var menit = waktu.getMinutes();
+    var detik = waktu.getSeconds();
+
+    document.getElementById("jam").innerHTML =
+    "<font color='yellow' size='6'>" +
+    jam + ":" + menit + ":" + detik +
+    "</font>";
+
+}
+
+setInterval(tampilJam, 1000);
+
+</script>
+
+<img src="logo.png" width="100">
+
+<img src="camat.jpg" width="150">
+
+</center>
+
+</body>
+</html>
